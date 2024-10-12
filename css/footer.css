@@ -1,0 +1,122 @@
+#rodape {
+  background-color: #1f2024;
+  height: 130px;
+  max-width: 100%;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 3px;
+}
+
+.contato-rodape {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  gap: 15px;
+  font-size: 1.5rem;
+}
+
+.ul-rodape {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 4px;
+  list-style: none;
+}
+
+.contato-rodape a {
+  cursor: pointer;
+  color: palevioletred;
+  text-decoration: none;
+}
+
+.link-rodape:hover {
+  color: palevioletred;
+}
+
+.txt-rodape {
+  font-size: 1rem;
+}
+
+/* ---------- @media 1030 ----------*/
+
+@media (max-width: 1030px) {
+  .contato-rodape {
+    font-size: 1.375rem;
+  }
+}
+
+/* ---------- @media 900 ----------*/
+
+@media (max-width: 900px) {
+  .contato-rodape {
+    gap: 10px;
+    font-size: 1.25rem;
+  }
+
+  .ul-rodape {
+    gap: 5px;
+  }
+}
+
+/* ---------- @media 750 ----------*/
+
+@media (max-width: 750px) {
+  .contato-rodape {
+    gap: 10px;
+    font-size: 1.125rem;
+  }
+
+  .ul-rodape {
+    gap: 10px;
+    padding-top: 0px;
+  }
+}
+
+/* ---------- @media 720 ----------*/
+
+@media (max-width: 720px) {
+  .contato-rodape p {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .contato-rodape {
+    /* display: grid; */
+    grid-template-columns: auto;
+    gap: 10px;
+  }
+
+  .ul-rodape {
+    /* display: flex;
+  justify-content: center; */
+    gap: 10px;
+    padding-top: 0px;
+    /* list-style: none; */
+  }
+
+  .txt-rodape {
+    font-size: 0.875rem;
+  }
+}
+
+/* ---------- @media 377 ----------*/
+
+@media (max-width: 377px) {
+  .contato-rodape {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .ul-rodape {
+    gap: 5px;
+  }
+
+  .txt-rodape {
+    text-align: center;
+  }
+}

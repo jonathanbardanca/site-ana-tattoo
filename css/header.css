@@ -1,0 +1,95 @@
+.cabecalho {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 1.25rem;
+}
+
+.titulo {
+  font-family: "Felipa", serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: palevioletred;
+}
+
+.menu {
+  /* font-optical-sizing: auto; */
+  /* font-weight: 400; */
+  display: flex;
+  gap: 32px;
+  position: relative;
+  list-style: none;
+}
+
+.menu-item {
+  color: white;
+  position: relative;
+  text-decoration: none;
+}
+
+.menu-item::after {
+  content: "";
+  height: 3px;
+  transition: 0.2s;
+  position: absolute;
+  background-color: palevioletred;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+}
+
+.menu-item:hover::after {
+  width: 100%;
+}
+
+/* ---------- @media 750 ----------*/
+
+@media (max-width: 750px) {
+  .cabecalho {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* padding: 15px 20px; */
+  }
+
+  .titulo {
+    font-size: 2.5rem;
+    display: block;
+    margin: auto;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    position: relative;
+    font-size: 1.125rem;
+  }
+}
+
+/* ---------- @media 700 ----------*/
+
+@media (max-width: 700px) {
+  .menu {
+    /* display: flex;
+    flex-wrap: wrap; */
+    gap: 20px;
+    justify-content: center;
+  }
+}
+
+/* ---------- @media 377 ----------*/
+
+/* @media (max-width: 377px) {
+  .menu {
+    justify-content: center;
+  }
+} */

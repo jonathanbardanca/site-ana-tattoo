@@ -1,0 +1,137 @@
+#section-estilo {
+  width: 1000px;
+  margin: auto;
+  background-color: #1f2024;
+  display: grid;
+  place-content: center;
+  scroll-margin-top: 100px;
+  /* height: 700px; */
+}
+
+.div-estilo {
+  width: 900px;
+  height: 550px;
+  display: grid;
+  grid-template-columns: auto auto;
+  place-content: center;
+  margin-bottom: 40px;
+  border-top: 3.5px solid palevioletred;
+}
+
+.txt-estilo {
+  display: block;
+  font-size: 1.375rem;
+  width: 450px;
+  margin: 40px 40px 0px 30px;
+  line-height: 1.4;
+}
+
+.div-img-estilo {
+  width: 333px;
+  height: 366px;
+  overflow: hidden;
+}
+
+.img-estilo:hover {
+  transform: scale(1.05);
+  transition: transform 0.4s;
+}
+
+/* ---------- @media 970 ----------*/
+
+@media (max-width: 970px) {
+  .txt-estilo {
+    margin: 40px 35px 0px 20px;
+  }
+
+  .div-img-estilo {
+    margin-right: 10px;
+  }
+
+  .div-estilo {
+    width: auto;
+    height: 550px;
+    display: grid;
+    grid-template-columns: auto auto;
+    place-content: center;
+    border-top: 3.5px solid palevioletred;
+  }
+}
+
+/* ---------- @media 900 ----------*/
+
+@media (max-width: 900px) {
+  .txt-estilo {
+    width: auto;
+  }
+
+  .div-estilo {
+    margin: 0px 40px;
+  }
+
+  #section-estilo {
+    width: auto;
+  }
+}
+
+/* ---------- @media 750 ----------*/
+
+@media (max-width: 750px) {
+  #section-estilo {
+    scroll-margin-top: 153px;
+  }
+
+  .txt-estilo {
+    font-size: 1.25rem;
+  }
+
+  .txt-estilo {
+    margin-left: 0px;
+  }
+}
+
+/* ---------- @media 700 ----------*/
+
+@media (max-width: 700px) {
+  #section-estilo {
+    scroll-margin-top: 133px;
+  }
+
+  .div-estilo {
+    width: auto;
+    grid-template-columns: auto;
+    justify-items: center;
+    gap: 30px;
+    margin-bottom: 0px;
+    margin: 20px;
+    height: 700px;
+    padding-top: 30px;
+  }
+
+  .div-img-estilo {
+    width: 100%;
+    height: auto;
+  }
+
+  .img-estilo {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .txt-estilo {
+    margin: 0;
+    padding: 10px;
+  }
+
+  .div-img-estilo {
+    margin: 0px;
+  }
+}
+
+/* ---------- @media 377 ----------*/
+
+@media (max-width: 377px) {
+  #section-estilo {
+    scroll-margin-top: 170px;
+  }
+}

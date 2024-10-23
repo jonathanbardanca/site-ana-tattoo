@@ -21,7 +21,6 @@
   justify-content: center;
   gap: 10px;
   padding-top: 4px;
-  list-style: none;
 }
 
 .contato-rodape a {
@@ -38,14 +37,6 @@
   font-size: 1rem;
 }
 
-/* ---------- @media 1030 ----------*/
-
-@media (max-width: 1030px) {
-  .contato-rodape {
-    font-size: 1.375rem;
-  }
-}
-
 /* ---------- @media 900 ----------*/
 
 @media (max-width: 900px) {
@@ -56,20 +47,7 @@
 
   .ul-rodape {
     gap: 5px;
-  }
-}
-
-/* ---------- @media 750 ----------*/
-
-@media (max-width: 750px) {
-  .contato-rodape {
-    gap: 10px;
-    font-size: 1.125rem;
-  }
-
-  .ul-rodape {
-    gap: 10px;
-    padding-top: 0px;
+    padding-top: 2px;
   }
 }
 
@@ -78,21 +56,6 @@
 @media (max-width: 720px) {
   .contato-rodape p {
     text-align: center;
-    font-size: 1rem;
-  }
-
-  .contato-rodape {
-    /* display: grid; */
-    grid-template-columns: auto;
-    gap: 10px;
-  }
-
-  .ul-rodape {
-    /* display: flex;
-  justify-content: center; */
-    gap: 10px;
-    padding-top: 0px;
-    /* list-style: none; */
   }
 
   .txt-rodape {
@@ -103,15 +66,6 @@
 /* ---------- @media 377 ----------*/
 
 @media (max-width: 377px) {
-  .contato-rodape {
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-    gap: 10px;
-    font-size: 1.5rem;
-    font-weight: 400;
-  }
-
   .ul-rodape {
     gap: 5px;
   }

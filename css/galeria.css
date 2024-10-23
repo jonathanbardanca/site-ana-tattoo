@@ -31,7 +31,7 @@ h2 {
   overflow: hidden;
 }
 
-.imgs:hover {
+.div-img-galeria img:hover {
   transform: scale(1.05);
   transition: transform 0.4s;
 }
@@ -50,38 +50,20 @@ h2 {
   #section-galeria {
     scroll-margin-top: 110px;
   }
-
-  .div-txt-galeria {
-    display: block;
-    width: 250px;
-    color: white;
-    text-align: center;
-    margin: 0px auto 60px;
-    padding-top: 80px;
-    border-bottom: 3.5px solid palevioletred;
-  }
 }
 
 /* ---------- @media 700 ----------*/
 
 @media (max-width: 700px) {
   .galeria {
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
     gap: 10px;
-    margin-bottom: 40px;
     padding: 10px;
   }
 
   .div-txt-galeria {
-    display: block;
     width: 200px;
-    color: white;
-    text-align: center;
-    margin: 0px auto 60px;
     padding-top: 50px;
-    border-bottom: 3.5px solid palevioletred;
   }
 
   .div-img-galeria {
@@ -92,13 +74,5 @@ h2 {
 
   .txt-galeria {
     font-size: 50px;
-  }
-
-  .imgs {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    transition: transform 0.4s;
-    /* object-fit: contain; */
   }
 }

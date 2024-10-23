@@ -5,7 +5,6 @@
   display: grid;
   place-content: center;
   scroll-margin-top: 100px;
-  /* height: 700px; */
 }
 
 .div-estilo {
@@ -14,6 +13,7 @@
   display: grid;
   grid-template-columns: auto auto;
   place-content: center;
+  padding: 0px 40px 0px;
   margin-bottom: 40px;
   border-top: 3.5px solid palevioletred;
 }
@@ -22,7 +22,7 @@
   display: block;
   font-size: 1.375rem;
   width: 450px;
-  margin: 40px 40px 0px 30px;
+  margin: 40px 30px 0px 0px;
   line-height: 1.4;
 }
 
@@ -37,24 +37,31 @@
   transition: transform 0.4s;
 }
 
+/* ---------- @media 1030 ----------*/
+
+@media (max-width: 1030px) {
+  #section-estilo {
+    width: 950px;
+  }
+
+  .txt-estilo {
+    width: auto;
+  }
+
+  .div-estilo {
+    padding: 80px 20px 50px;
+  }
+}
+
 /* ---------- @media 970 ----------*/
 
 @media (max-width: 970px) {
-  .txt-estilo {
-    margin: 40px 35px 0px 20px;
+  #section-estilo {
+    width: auto;
   }
 
   .div-img-estilo {
     margin-right: 10px;
-  }
-
-  .div-estilo {
-    width: auto;
-    height: 550px;
-    display: grid;
-    grid-template-columns: auto auto;
-    place-content: center;
-    border-top: 3.5px solid palevioletred;
   }
 }
 
@@ -66,11 +73,47 @@
   }
 
   .div-estilo {
+    width: auto;
     margin: 0px 40px;
   }
 
   #section-estilo {
     width: auto;
+  }
+}
+
+/* ---------- @media 800 ----------*/
+
+@media (max-width: 800px) {
+  .div-estilo {
+    grid-template-columns: auto;
+    justify-items: center;
+    gap: 30px;
+    margin-bottom: 0px;
+    margin: 0px 20px;
+    height: 700px;
+    padding: 30px 0px 0px;
+  }
+
+  .div-txt-sobre {
+    grid-row: 1;
+  }
+
+  .txt-estilo {
+    margin: 0;
+    padding: 10px;
+  }
+
+  .div-img-estilo {
+    margin: 0px;
+  }
+}
+
+/* ---------- @media 700 ----------*/
+
+@media (max-width: 700px) {
+  .txt-estilo {
+    padding: 20px;
   }
 }
 
@@ -84,28 +127,13 @@
   .txt-estilo {
     font-size: 1.25rem;
   }
-
-  .txt-estilo {
-    margin-left: 0px;
-  }
 }
 
 /* ---------- @media 700 ----------*/
 
 @media (max-width: 700px) {
   #section-estilo {
-    scroll-margin-top: 133px;
-  }
-
-  .div-estilo {
-    width: auto;
-    grid-template-columns: auto;
-    justify-items: center;
-    gap: 30px;
-    margin-bottom: 0px;
-    margin: 20px;
-    height: 700px;
-    padding-top: 30px;
+    scroll-margin-top: 150px;
   }
 
   .div-img-estilo {
@@ -116,15 +144,6 @@
   .img-estilo {
     width: 100%;
     object-fit: contain;
-  }
-
-  .txt-estilo {
-    margin: 0;
-    padding: 10px;
-  }
-
-  .div-img-estilo {
-    margin: 0px;
   }
 }
 

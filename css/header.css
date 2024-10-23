@@ -12,26 +12,20 @@
   padding: 15px 1.25rem;
 }
 
-.titulo {
-  font-family: "Felipa", serif;
-  font-weight: 400;
-  font-size: 40px;
-  color: palevioletred;
+.logo {
+  width: 254px;
+  height: 52px;
 }
 
 .menu {
-  /* font-optical-sizing: auto; */
-  /* font-weight: 400; */
   display: flex;
   gap: 32px;
   position: relative;
-  list-style: none;
 }
 
 .menu-item {
   color: white;
   position: relative;
-  text-decoration: none;
 }
 
 .menu-item::after {
@@ -57,11 +51,9 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-    /* padding: 15px 20px; */
   }
 
-  .titulo {
-    font-size: 2.5rem;
+  .logo {
     display: block;
     margin: auto;
   }
@@ -79,17 +71,7 @@
 
 @media (max-width: 700px) {
   .menu {
-    /* display: flex;
-    flex-wrap: wrap; */
-    gap: 20px;
+    gap: 10px 20px;
     justify-content: center;
   }
 }
-
-/* ---------- @media 377 ----------*/
-
-/* @media (max-width: 377px) {
-  .menu {
-    justify-content: center;
-  }
-} */

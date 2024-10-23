@@ -6,22 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Aqui voce pode ver o portfólio de Ana Beatriz, uma tatuadora de Florianópolis Santa Catarina que gosta de trabalhar no estilo Blackwork.">
     <title>Ana Beatriz tattoo</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.min.css">
     <link rel="icon" href="imagens/favcon.png" type="image/png">
-
-    <!-- <link rel="preload" as="font" type="font/woff2" href="https://fonts.googleapis.com">
-    <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Felipa&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Felipa&family=Urbanist&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
     <header class="cabecalho">
-        <h1 class="titulo">Ana Beatriz tattoo</h1>
+        <a href="#section-home">
+            <img src="imagens/logo-titulo.svg" alt="Ana Beatriz tatuadora" width="254" height="52" class="logo">
+        </a>
         <nav>
             <ul class="menu">
                 <li><a class="menu-item" href="#section-home" aria-label="Ir para home">Home</a></li>
@@ -50,21 +48,31 @@
             </div>
 
             <div class="div-img-home">
-                <img class="img-home" src="imagens/home.jpg" alt="Tatuando">
+                <picture>
+                    <source srcset="imagens/home.avif" class="img-home" width="450" height="343" type="image/avif" alt="Tatuando">
+                    <img src="imagens/home.jpg" class="img-home" width="450" height="343" type="image/jpg" alt="Tatuando">
+                </picture>
             </div>
 
         </section>
 
         <section id="section-sobre" aria-label="Sobre ana beatriz">
-            <div class="div-img-sobre">
-                <img src="imagens/img-sobre.jpg" alt="Foto de perfil de Ana Beatriz" class="img-sobre">
-            </div>
+            <div class="div-sobre">
+                <div class="div-img-sobre">
+                    <picture>
+                        <source media="(max-width: 710px)" srcset="imagens/img-sobre.avif" width="630" height="945" type="image/avif" alt="Foto de perfil de Ana Beatriz">
 
-            <div class="div-txt-sobre">
-                <p class="txt1-sobre"><span>Olá! Me chamo Ana Beatriz</span>, sou natural de Florianópolis, onde moro e tatuo atualmente. Comecei a tatuar no início de 2022, quando fiz o curso e me apaixonei pela experiência e assim decidi o que queria pra mim.
-                </p>
-                <p class="txt2-sobre">Sou filha de artista e desde muito novinha sou influenciada pela minha mãe a seguir por esse caminho que é minha paixão. Desenho desde muito nova e encontrar a tatuagem foi um sonho realizado de poder trabalhar com arte e algo que marque pra sempre as pessoas e suas histórias. Gosto da ideia de fazer parte de tudo isso, então que tal eu fazer parte da sua história também?
-                </p>
+                        <source srcset="imagens/img-sobre.avif" width="333" height="500" type="image/avif" alt="Foto de perfil de Ana Beatriz">
+                        <img src="imagens/img-sobre.jpg" class="img-sobre" width="630" height="945" type="image/jpg" alt="Foto de perfil de Ana Beatriz">
+                    </picture>
+                </div>
+
+                <div class="div-txt-sobre">
+                    <p class="txt1-sobre"><span>Olá! Me chamo Ana Beatriz</span>, sou natural de Florianópolis, onde moro e tatuo atualmente. Comecei a tatuar no início de 2022, quando fiz o curso e me apaixonei pela experiência e assim decidi o que queria pra mim.
+                    </p>
+                    <p class="txt2-sobre">Sou filha de artista e desde muito novinha sou influenciada pela minha mãe a seguir por esse caminho que é minha paixão. Desenho desde muito nova e encontrar a tatuagem foi um sonho realizado de poder trabalhar com arte e algo que marque pra sempre as pessoas e suas histórias. Gosto da ideia de fazer parte de tudo isso, então que tal eu fazer parte da sua história também?
+                    </p>
+                </div>
             </div>
         </section>
 
@@ -73,7 +81,12 @@
                 <p class="txt-estilo">Me identifico e gosto de trabalhar com o estilo <span>Blackwork</span>, que de forma resumida, seriam tatuagens feitas apenas com tinta preta e tons escuros, podendo incluir sombras, rastelados, traços mais grossos e finos. No meu caso eu gosto de misturar tudo isso e um pouco de branco em lugares específicos para dar aquela diferenciada na tattoo.</p>
 
                 <div class="div-img-estilo">
-                    <img src="imagens/img-estilo.jpg" alt="Tatuagem Blackwork" class="img-estilo">
+                    <picture>
+                        <source media="(max-width: 710px)" srcset="imagens/img-estilo.avif" width="670" height="730" type="image/avif" alt="Tatuagem Blackwork">
+
+                        <source srcset="imagens/img-estilo.avif" width="333" height="366" type="image/avif" alt="Tatuagem Blackwork">
+                        <img src="imagens/img-estilo.jpg" class="img-estilo" width="670" height="730" type="image/jpg" alt="Tatuagem Blackwork">
+                    </picture>
                 </div>
             </div>
         </section>
@@ -85,40 +98,100 @@
 
             <div class="galeria">
                 <div class="div-img-galeria">
-                    <img class="imgs" src="imagens/galeria1.jpg" alt="tatuagem 1 - concha">
+                    <picture>
+                        <source srcset="imagens/galeria1.avif" width="333" height="444" type="image/avif" alt="Tatuando">
+                        <img src="imagens/galeria1.jpg" width="333" height="444" type="image/jpg" alt="tatuagem 1 - concha">
+                    </picture>
                 </div>
                 <div class="div-img-galeria">
-                    <img class="imgs" src="imagens/galeria2.jpg" alt="tatuagem 2 - homen aranha">
+                    <picture>
+                        <source srcset="imagens/galeria2.avif" width="333" height="444" type="image/avif" alt="Tatuando">
+                        <img src="imagens/galeria2.jpg" width="333" height="444" type="image/jpg" alt="tatuagem 2 - homen aranha">
+                    </picture>
                 </div>
                 <div class="div-img-galeria">
-                    <img class="imgs" src="imagens/galeria3.jpg" alt="tatuagem 3 - borboleta">
+                    <picture>
+                        <source srcset="imagens/galeria3.avif" width="333" height="444" type="image/avif" alt="Tatuando">
+                        <img src="imagens/galeria3.jpg" width="333" height="444" type="image/jpg" alt="tatuagem 3 - anime">
+                    </picture>
                 </div>
                 <div class="div-img-galeria">
-                    <img class="imgs" src="imagens/galeria4.jpg" alt="tatuagem 4 - borboleta">
+                    <picture>
+                        <source srcset="imagens/galeria4.avif" width="333" height="444" type="image/avif" alt="Tatuando">
+                        <img src="imagens/galeria4.jpg" width="333" height="444" type="image/jpg" alt="tatuagem 4 - personagem de anime">
+                    </picture>
                 </div>
                 <div class="div-img-galeria">
-                    <img class="imgs" src="imagens/galeria5.jpg" alt="tatuagem 5 - aranha">
+                    <picture>
+                        <source srcset="imagens/galeria5.avif" width="333" height="444" type="image/avif" alt="Tatuando">
+                        <img src="imagens/galeria5.jpg" width="333" height="444" type="image/jpg" alt="tatuagem 5 - aranha">
+                    </picture>
                 </div>
                 <div class="div-img-galeria">
-                    <img class="imgs" src="imagens/galeria6.jpg" alt="tatuagem 6 - concha">
+                    <picture>
+                        <source srcset="imagens/galeria6.avif" width="333" height="444" type="image/avif" alt="Tatuando">
+                        <img src="imagens/galeria6.jpg" width="333" height="444" type="image/jpg" alt="tatuagem 6 - concha">
+                    </picture>
                 </div>
                 <div class="div-img-galeria">
-                    <img class="imgs" src="imagens/galeria7.jpg" alt="tatuagem 7 - concha">
+                    <picture>
+                        <source srcset="imagens/galeria7.avif" width="333" height="444" type="image/avif" alt="Tatuando">
+                        <img src="imagens/galeria7.jpg" width="333" height="444" type="image/jpg" alt="tatuagem 7 - mao">
+                    </picture>
                 </div>
                 <div class="div-img-galeria">
-                    <img class="imgs" src="imagens/galeria8.jpg" alt="tatuagem 8 - mão">
+                    <picture>
+                        <source srcset="imagens/galeria8.avif" width="333" height="444" type="image/avif" alt="Tatuando">
+                        <img src="imagens/galeria8.jpg" width="333" height="444" type="image/jpg" alt="tatuagem 8 - personagem de anime">
+                    </picture>
                 </div>
                 <div class="div-img-galeria">
-                    <img class="imgs" src="imagens/galeria9.jpg" alt="tatuagem 9 - borboleta">
+                    <picture>
+                        <source srcset="imagens/galeria9.avif" width="333" height="444" type="image/avif" alt="Tatuando">
+                        <img src="imagens/galeria9.jpg" width="333" height="444" type="image/jpg" alt="tatuagem 9 - borboleta">
+                    </picture>
                 </div>
                 <div class="div-img-galeria">
-                    <img class="imgs" src="imagens/galeria10.jpg" alt="tatuagem 10 - borboleta">
+                    <picture>
+                        <source srcset="imagens/galeria10.avif" width="333" height="444" type="image/avif" alt="Tatuando">
+                        <img src="imagens/galeria10.jpg" width="333" height="444" type="image/jpg" alt="tatuagem 10 - borboleta">
+                    </picture>
                 </div>
                 <div class="div-img-galeria">
-                    <img class="imgs" src="imagens/galeria11.jpg" alt="tatuagem 11 - ursinho">
+                    <picture>
+                        <source srcset="imagens/galeria11.avif" width="333" height="444" type="image/avif" alt="Tatuando">
+                        <img src="imagens/galeria11.jpg" width="333" height="444" type="image/jpg" alt="tatuagem 11 - mariposa">
+                    </picture>
                 </div>
                 <div class="div-img-galeria">
-                    <img class="imgs" src="imagens/galeria12.jpg" alt="tatuagem 12 -">
+                    <picture>
+                        <source srcset="imagens/galeria12.avif" width="333" height="444" type="image/avif" alt="Tatuando">
+                        <img src="imagens/galeria12.jpg" width="333" height="444" type="image/jpg" alt="tatuagem 12 - caveira">
+                    </picture>
+                </div>
+                <div class="div-img-galeria">
+                    <picture>
+                        <source srcset="imagens/galeria13.avif" width="333" height="444" type="image/avif" alt="Tatuando">
+                        <img src="imagens/galeria13.jpg" width="333" height="444" type="image/jpg" alt="tatuagem 13 - borboleta">
+                    </picture>
+                </div>
+                <div class="div-img-galeria">
+                    <picture>
+                        <source srcset="imagens/galeria14.avif" width="333" height="444" type="image/avif" alt="Tatuando">
+                        <img src="imagens/galeria14.jpg" width="333" height="444" type="image/jpg" alt="tatuagem 14 - borboleta">
+                    </picture>
+                </div>
+                <div class="div-img-galeria">
+                    <picture>
+                        <source srcset="imagens/galeria15.avif" width="333" height="444" type="image/avif" alt="Tatuando">
+                        <img src="imagens/galeria15.jpg" width="333" height="444" type="image/jpg" alt="tatuagem 15">
+                    </picture>
+                </div>
+                <div class="div-img-galeria">
+                    <picture>
+                        <source srcset="imagens/galeria16.avif" width="333" height="444" type="image/avif" alt="Tatuando">
+                        <img src="imagens/galeria16.jpg" width="333" height="444" type="image/jpg" alt="tatuagem 16 - ursinho">
+                    </picture>
                 </div>
             </div>
         </section>
